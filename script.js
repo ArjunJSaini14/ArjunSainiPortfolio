@@ -47,6 +47,11 @@ const quotes = ["Don't count the days, make the days count - Muhammed Ali",
                "If there is no struggle, there is no progress - Fredrick Douglass",
                "It always seems impossible until it's done - Nelson Mandela"];
 
+const today = new Date();
+const index = today.getDate() % quotes.length;
+const quoteOfTheDay = quotes[index];
+document.getElementById("quoteOfTheDay").textContent = quoteOfTheDay;
+
 document.addEventListener('DOMContentLoaded', () => {
     const profile = document.querySelector('.profile-wrapper');
     const bubble = profile.querySelector('.quote-bubble');
