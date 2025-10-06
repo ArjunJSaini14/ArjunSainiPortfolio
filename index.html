@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="title">
+    <img src="header.png" alt="woodHeader" class="woodHeader">
+    <div class="links">
+        <a href="mailto:saini.ar@northeastern.edu">Email</a>
+        <a href="https://github.com/ArjunJSaini14" target="_blank">Github</a>
+        <a href="file:///C:/Users/saini/Downloads/ArjunSainiResume.pdf" target="_blank">Resume</a>
+    </div>
+</div>
+
+<!-- Profile Picture -->
+<div class="profile-wrapper">
+    <div class="profile">
+        <img src="profile.png" alt="Profile Picture">
+    </div>
+    <div class="quote-bubble"></div>
+</div>
+
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Education Section -->
+    <div class="education reveal">
+        <div class="education-header">
+            <h1>Education</h1>
+            <img src="sawImage.png" alt="woodCoaster" class="icon">
+            <div class="line"></div>
+        </div>
+        
+        <div class="education-desc">
+            <h2>Northeastern University</h2>
+            <p><em>Khoury College of Computer Sciences, Boston, MA</em></p>
+            <p>B.S. Computer Science & Economics • Expected May 2028</p>
+            <p><strong>Honors:</strong> GPA: 3.73, Dean's List</p>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Experience Section -->
+    <div class="experience reveal">
+        <div class="experience-header">
+            <h1>Experience</h1>
+            <img src="sawImage.png" alt="woodCoaster" class="icon">
+            <div class="line"></div>
+        </div>
+
+        <div class="experience-desc">
+            <!-- Jumpstart -->
+            <div class="outer-box">
+                <div class="inner-box">
+                    <button class="icon-button" data-modal="jumpstartModal">
+                        <img src="wood.png" alt="woodCoaster" class="icon">
+                    </button>
+                </div>
+                <div class="subtitle-box">
+                    <p>Jumpstart Developer</p>
+                </div>
+            </div>
+
+            <!-- Volunteer -->
+            <div class="outer-box">
+                <div class="inner-box">
+                    <button class="icon-button" data-modal="volunteerModal">
+                        <img src="wood.png" alt="woodCoaster" class="icon">
+                    </button>
+                </div>
+                <div class="subtitle-box">
+                    <p>Community Volunteer</p>
+                </div>
+            </div>
+
+            <!-- Groundskeeper -->
+            <div class="outer-box">
+                <div class="inner-box">
+                    <button class="icon-button" data-modal="groundskeeperModal">
+                        <img src="wood.png" alt="woodCoaster" class="icon">
+                    </button>
+                </div>
+                <div class="subtitle-box">
+                    <p>Groundskeeper</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Projects Section -->
+    <div class="projects reveal">
+        <div class="experience-header">
+            <h1>Projects</h1>
+            <img src="sawImage.png" alt="woodCoaster" class="icon">
+            <div class="line"></div>
+        </div>
+
+        <div class="experience-desc">
+            <!-- Taskboard -->
+            <div class="outer-box">
+                <div class="inner-box">
+                    <button class="icon-button" data-modal="taskboardModal">
+                        <img src="wood.png" alt="woodCoaster" class="icon">
+                    </button>
+                </div>
+                <div class="subtitle-box">
+                    <p>Taskboard Manager</p>
+                </div>
+            </div>
+
+            <!-- Creditcard -->
+            <div class="outer-box">
+                <div class="inner-box">
+                    <button class="icon-button" data-modal="creditcardModal">
+                        <img src="wood.png" alt="woodCoaster" class="icon">
+                    </button>
+                </div>
+                <div class="subtitle-box">
+                    <p>Creditcard Simulator</p>
+                </div>
+            </div>
+
+            <!-- Minesweeper -->
+            <div class="outer-box">
+                <div class="inner-box">
+                    <button class="icon-button" data-modal="minesweeperModal">
+                        <img src="wood.png" alt="woodCoaster" class="icon">
+                    </button>
+                </div>
+                <div class="subtitle-box">
+                    <p>Minesweeper</p>
+                </div>
+            </div>
+
+            <!-- Memory & Reaction-Time Software -->
+            <div class="outer-box">
+                <div class="inner-box">
+                    <button class="icon-button" data-modal="binarytreeModal">
+                        <img src="wood.png" alt="woodCoaster" class="icon">
+                    </button>
+                </div>
+                <div class="subtitle-box">
+                    <p>Binary Storage Tree</p>
+                </div>
+            </div>
+
+            <!-- Binary Storage Tree -->
+            <div class="outer-box">
+                <div class="inner-box">
+                    <button class="icon-button" data-modal="cognitiveModal">
+                        <img src="wood.png" alt="woodCoaster" class="icon">
+                    </button>
+                </div>
+                <div class="subtitle-box">
+                    <p>Cognitive Trainer</p>
+                </div>
+            </div>
+
+            
+
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <!-- Jumpstart Modal -->
+    <div id="jumpstartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="split left">
+                <img src="wood.png" alt="woodCoaster" class="modalIcon">
+            </div>
+            <div class="split right">
+                <h1><em>Jumpstart Developer</em></h1>
+                <h3><strong>Code4Community</strong></h3>
+                <h4>Boston, MA • August 2025 - Present</h4>
+                <ul>
+                    <li>Collaborate with fellow student developers and mentors 
+                        in weekly sessions to build full-stack web applications, 
+                        gaining technical skills through coding, peer learning, and project reviews. </li>
+                    <li>Work on team-based projects using agile practices, version control, 
+                        and problem-solving to deliver real-world software solutions. </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Volunteer Modal -->
+    <div id="volunteerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="split left">
+                <img src="wood.png" alt="woodCoaster" class="modalIcon">
+            </div>
+            <div class="split right">
+                <h1><em>Volunteer</em></h1>
+                <h3><strong>Sudbury Senior Center</strong></h3>
+                <h4>Sudbury, MA • February 2022 - May 2024</h4>
+                <ul>
+                    <li>Delivered meals to seniors through the “Meals on Wheels” program, 
+                        supporting individuals with limited transportation and ensuring consistent 
+                        access to food while also providing social interaction and wellness check-ins.  </li>
+                    <li>Organized and coordinated events, managing logistics and 
+                        post-event cleanup to ensure safety standards and create an inclusive, 
+                        welcoming environment that fostered engagement, belonging, 
+                        and enjoyment among attendees.  </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Groundskeeper Modal -->
+    <div id="groundskeeperModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="split left">
+                <img src="wood.png" alt="woodCoaster" class="modalIcon">
+            </div>
+            <div class="split right">
+                <h1><em>Groundskeeper</em></h1>
+                <h3><strong>Concord Country Club</strong></h3>
+                <h4>Concord, MA • May 2025 - August 2025</h4>
+                <ul>
+                    <li>Maintained turf, irrigation, and landscaping to ensure 
+                        consistent, professional quality playing conditions.</li>
+                    <li>Trained and mentored 10+ new team members on safety, 
+                        maintenance procedures, and quality standards. </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Taskboard Modal -->
+    <div id="taskboardModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="split left">
+                <img src="wood.png" alt="woodCoaster" class="modalIcon">
+            </div>
+            <div class="split right">
+                <h1><em>Taskboard Manager</em></h1>
+                <h3><strong>React, Tailwind, Javascript, Node.js, PostgreSQL</strong></h3>
+                <h4>Designer & Editor • August 2025 - Present</h4>
+                <ul>
+                    <li>Designed and developed a full-stack project management application 
+                        using React, Tailwind, JS, Nest.js, and PostgreSQL, enabling users 
+                        to create boards, organize tasks, and track progress 
+                        through a user-friendly interface. </li>
+                    <li>Implemented secure CRUD operations, drag-and-drop management, 
+                        and real-time data persistence in PostgreSQL, enhancing collaboration 
+                        features and supporting seamless updates for 30+ simulated user records. </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Creditcard Modal -->
+    <div id="creditcardModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="split left">
+                <img src="wood.png" alt="woodCoaster" class="modalIcon">
+            </div>
+            <div class="split right">
+                <h1><em>Creditcard Simulator</em></h1>
+                <h3><strong>Java</strong></h3>
+                <h4>Designer & Editor • Aug 2025 - Sept 2025</h4>
+                <ul>
+                    <li>Developed a Java-based credit card simulator that dynamically 
+                        manages balances, expenses, payments, account status, and a recursive 
+                        transaction history search, improving accuracy in financial tracking 
+                        and enhancing user interaction. </li>
+                    <li>Implemented features such as dynamic credit limit increases, 
+                        automated minimum payment enforcement, late fee calculation and handling, 
+                        and multi-cycle simulation to closely replicate real-world credit behavior. </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Minesweeper Modal -->
+    <div id="minesweeperModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="split left">
+                <img src="wood.png" alt="woodCoaster" class="modalIcon">
+            </div>
+            <div class="split right">
+                <h1><em>Minesweeper</em></h1>
+                <h3><strong>Java</strong></h3>
+                <h4>Desinger & Editor • May 2025 - June 2025</h4>
+                <ul>
+                    <li>Developed a fully functional Minesweeper game in Java 
+                        with customizable grid sizes and difficulty modes.</li>
+                    <li>Implemented recursive flood-fill algorithms to automatically
+                         reveal connected empty cells, enhancing gameplay flow.</li>
+                     <li>Designed interactive mouse controls for left/right clicks, 
+                        restart capability, and real-time win/lose detection.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Binary Storage Tree Modal -->
+    <div id="binarytreeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="split left">
+                <img src="wood.png" alt="woodCoaster" class="modalIcon">
+            </div>
+            <div class="split right">
+                <h1><em>Binary Storage Tree</em></h1>
+                <h3><strong>Scheme</strong></h3>
+                <h4>Desinger & Editor • March 2025 - April 2025</h4>
+                <ul>
+                    <li>Built a binary tree storage simulator in Racket 
+                        that constructs trees from input lists of binary numbers.</li>
+                    <li>Implemented efficient data-to-bit assignment 
+                        strategies to maximize storage utilization.</li>
+                    <li>Added interactive features allowing users to 
+                        insert new data or clear existing nodes dynamically.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Binary Storage Tree Modal -->
+    <div id="cognitiveModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="split left">
+                <img src="wood.png" alt="woodCoaster" class="modalIcon">
+            </div>
+            <div class="split right">
+                <h1><em>Cognitive Trainer</em></h1>
+                <h3><strong>Python</strong></h3>
+                <h4>Desinger & Editor • May 2023 - August 2023</h4>
+                <ul>
+                    <li>Developed and deployed interactive memory and reaction-time 
+                        applications in Python, creating intuitive interfaces tailored 
+                        for senior users and enhancing accessibility, engagement, 
+                        and ease of use through thoughtful design.</li>
+                    <li>Enhanced cognitive engagement and responsiveness for 20+ participants 
+                        from the local senior center by providing exercises that improved short-term 
+                        memory recall and reaction speed through structured tasks.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Technical Skills  -->
+    <div class="skills reveal">
+    <div class="education-header">
+        <h1>Technical Skills</h1>
+        <img src="sawImage.png" alt="woodCoaster" class="icon">
+        <div class="line"></div>
+    </div>
+    
+    <div class="skills-desc">
+        <h2>Languages:</h2>
+        <div class="skill-buttons no-wrap">
+            <span>Java</span>
+            <span>Scheme</span>
+            <span>React</span>
+            <span>Tailwind</span>
+            <span>PostgreSQL</span>
+            <span>Nest.js</span>
+            <span>Python</span>
+            </div>
+
+            <h2>Applications:</h2>
+            <div class="skill-buttons">
+                <span>Eclipse</span>
+                <span>IntelliJ IDEA</span>
+                <span>VSCode</span>
+                <span>Microsoft Office Suite</span>
+                <span>GitHub</span>
+                <span>Git</span>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Javascript -->
+    <script src="script.js"></script>
+</body>
+</html>
