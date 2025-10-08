@@ -140,7 +140,6 @@ body {
     justify-content: center;   
     gap: 80px;               
     align-items: flex-start; 
-
 }
 
 
@@ -576,6 +575,8 @@ body {
   box-shadow:
     inset 0 0 8px rgba(0, 0, 0, 0.5),
     0 0 3px rgba(255, 255, 255, 0.3);
+    background-color: lightgoldenrodyellow;
+    z-index: 2;
 }
 
 @keyframes spin {
@@ -625,17 +626,7 @@ body {
     color: black;
 }
 
-.cd-hole {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50px;   
-    height: 50px;
-    border-radius: 50%;
-    background-color: lightgoldenrodyellow;
-    z-index: 2;
-}
+
 
 .tonearm  {
     width: 8px;
@@ -660,7 +651,6 @@ body {
 }
 
 
-
 .tonearm.rotate {
     transform: rotate(50deg);
 }
@@ -671,3 +661,21 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.music-desc {
+    margin-top: 10px;
+    background-color: lightgoldenrodyellow;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    gap: 10px; 
+    display: flex;
+    flex-wrap: wrap;          
+    justify-content: center;   
+    gap: 80px;               
+    align-items: flex-start; 
+}
+
