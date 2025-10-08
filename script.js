@@ -47,10 +47,6 @@ const quotes = ["Don't count the days, make the days count - Muhammed Ali",
                "If there is no struggle, there is no progress - Fredrick Douglass",
                "It always seems impossible until it's done - Nelson Mandela"];
 
-const today = new Date();
-const index = today.getDate() % quotes.length;
-const quoteOfTheDay = quotes[index];
-document.getElementById("quoteOfTheDay").textContent = quoteOfTheDay;
 
 document.addEventListener('DOMContentLoaded', () => {
     const profile = document.querySelector('.profile-wrapper');
@@ -70,3 +66,36 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+// Music Section
+const albums = document.querySelectorAll(".cd-container");
+
+albums.forEach(album => {
+    const cd = album.querySelector(".cd");
+    const tonearm = album.querySelector(".tonearm");
+    const audio = album.querySelector("audio");
+    const startTime = parseFloat(album.dataset.start) || 0; 
+
+    let isPlaying = false;
+
+    cd.addEventListener("click", () => {
+        if (!isPlaying) {
+            albums.forEach(other => {
+                if (other !== album) {
+                    other.querySelector(".cd").classList.remove("spinning");
+                    other.querySelector(".tonearm").classList.remove("rotate");
+                    other.querySelector("audio").pause();
+                }
+            });
+            cd.classList.add("spinning");
+            tonearm.classList.add("rotate");
+            audio.currentTime = startTime;
+            audio.play();
+            isPlaying = true;
+        } else {
+            cd.classList.remove("spinning");
+            tonearm.classList.remove("rotate");
+            audio.pause();
+            isPlaying = false;
+        }
+    });
+});
