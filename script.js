@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
     profile.addEventListener('click', () => {
         const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
         bubble.textContent = randomQuote;
-        bubble.style.opacity = 1;
+        bubble.style.opacity = 1; 
         bubble.style.transform = "translateY(-50%) translateX(-10px)";
         
         setTimeout(() => {
@@ -98,6 +98,55 @@ albums.forEach(album => {
             isPlaying = false;
         }
     });
+});
+
+// Bar Scrolling
+// About Me
+document.getElementById('aboutMe').addEventListener('click', function() {
+  const targetSection = document.getElementById('aboutMeScroll');
+  targetSection.scrollIntoView({ behavior: 'smooth'});
+});
+
+// Education
+document.getElementById('education').addEventListener('click', function() {
+  const targetSection = document.getElementById('educationScroll');
+  targetSection.scrollIntoView({ behavior: 'smooth'});
+});
+
+// Experience
+document.getElementById('experience').addEventListener('click', function() {
+  const targetSection = document.getElementById('experienceScroll');
+  targetSection.scrollIntoView({ behavior: 'smooth'});
+});
+
+// Projects
+document.getElementById('projects').addEventListener('click', function() {
+  const targetSection = document.getElementById('projectScroll');
+  targetSection.scrollIntoView({ behavior: 'smooth'});
+});
+
+// Technical Skills
+document.getElementById('techSkills').addEventListener('click', function() {
+  const targetSection = document.getElementById('techScroll');
+  targetSection.scrollIntoView({ behavior: 'smooth'});
+});
+
+// Highlight Reel
+document.getElementById('highlightReel').addEventListener('click', function() {
+  const targetSection = document.getElementById('highlightScroll');
+  targetSection.scrollIntoView({ behavior: 'smooth'});
+});
+
+// Music
+document.getElementById('music').addEventListener('click', function() {
+  const targetSection = document.getElementById('musicScroll');
+  targetSection.scrollIntoView({ behavior: 'smooth'});
+});
+
+// Contact
+document.getElementById('contact').addEventListener('click', function() {
+  const targetSection = document.getElementById('contactScroll');
+  targetSection.scrollIntoView({ behavior: 'smooth'});
 });
 
 
